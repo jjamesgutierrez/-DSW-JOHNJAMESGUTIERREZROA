@@ -56,7 +56,104 @@
             Los estilos internos son definidos dentro del elemento &lt;style&gt; y éste dentro de la sección &lt;head&gt; del documento HTML de la siguiente forma como se muestra a 
             continuación:
 
+            <br /> <br/> &lt;!doctype html&gt; <br/>
+            &lt;html&gt;<br/>
+            &lt;head&gt;<br/>
+                &lt;style&gt;<br/>
+                    body {background: lightgrey;}<br/>
+                    h1 {color: blue;}<br/>
+                    p {color: green;}<br/>
+                &lt;/style&gt;<br/>
+            &lt;/head&gt;<br/>
+            &lt;body&gt;<br/>
+                &lt;h1>Este es un encabezado&lt;/h1&gt;<br/>
+                &lt;p>Este es un párrafo&lt;/p&gt;<br/>
+            &lt;/body&gt;<br/>
+            &lt;/html&gt;<br/>
+
         </p>
     </section>
+    <section>
+        <h2>
+            CSS3 Estilos externos
+        </h2>
+
+        <p>
+            Las hojas de estilos externas, son utilizadas para definir el estilo en varias páginas con el mismo archivo externo CSS, así es posible realizar cambios en este archivo 
+            y afectando su presentación incluso para todo el sitio web. 
+            Para usar una hoja de estilos externa (archivo CSS), se utiliza la etiqueta &lt;link&gt; en la sección &lt;head&gt; del documento HTML como a continuación lo mostramos:
+
+
+
+                <br /> <br/> &lt;!doctype html&gt; <br/>
+                &lt;html&gt; <br/>
+                &lt;head&gt; <br/>
+                &lt;link rel="stylesheet" href="/estilos.css"&gt; <br/>
+                &lt;/head&gt; <br/>
+                &lt;body&gt; <br/>
+                &lt;h1&gt;Este es un encabezado&lt;/h2&gt; <br/>
+                &lt;p&gt;Este es un párrafo&lt;/p&gt; <br/>
+                &lt;/body&gt; <br/>
+                &lt;/html&gt; <br/>
+        </p>
+    </section>
+    <section>
+        <h2> Selectores CSS </h2>
+        <p>selectores definen sobre qué elementos se aplicará un conjunto de reglas CSS.</p> 
+
+        <h3>Selectores básicos </h3>
+        
+        <h4>Selector de tipo</h4>
+        <p>Selecciona todos los elementos que coinciden con el nombre del elemento especificado.
+            Sintaxis: eltname (nombre de la etiqueta)
+            Ejemplo: input se aplicará a cualquier elemento &lt; input &gt;
+        </p>
+        <h4>Selector de clase</h4>
+        <p>
+            Selecciona todos los elementos que tienen el atributo de class especificado.
+            Sintaxis: .classname
+            Ejemplo: .index seleccionará cualquier elemento que tenga la clase "index".
+
+        </p>
+
+        <h4>Selector de ID</h4>
+        <p> 
+            Selecciona un elemento basándose en el valor de su atributo id. Solo puede haber un elemento con un determinado ID dentro de un documento.
+            Sintaxis: #idname
+            Ejemplo: #toc se aplicará a cualquier elemento que tenga el ID "toc".
+        </p>
+
+        <h4> Selector universal </h4>
+        <p>
+            Selecciona todos los elementos. Opcionalmente, puede estar restringido a un espacio de nombre específico o a todos los espacios de nombres.
+            Sintaxis: * ns|* *|*
+            Ejemplo: * se aplicará a todos los elementos del documento.
+        </p>
+
+        <h4> Selector de atributo </h4>
+        <p>
+            Selecciona elementos basándose en el valor de un determinado atributo.
+            Sintaxis: [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]
+            Ejemplo: [autoplay] seleccionará todos los elementos que tengan el atributo "autoplay" establecido (a cualquier valor).
+        </p>
+
+    </section>
+    <aside>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KTa5WUWU1lk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+        </div>
+
+    </aside>
+    <footer>	
+		<p>
+			<strong>Bibliografía:</strong> <br>
+			<a href= "https://desarrolloweb.com/articulos/introduccion-css3.html" target="_blank"> https://desarrolloweb.com/articulos/introduccion-css3.html</a> <br>
+			<a href= "https://www.exasoluciones.com/inicio/tutoriales/html/estilos-html-con-css" target= "_blank">https://www.exasoluciones.com/inicio/tutoriales/html/estilos-html-con-css</a><br>
+			<a href= "https://developer.mozilla.org/es/docs/Web/CSS/Selectores_CSS" target= "_blank">https://developer.mozilla.org/es/docs/Web/CSS/Selectores_CSS</a><br>
+
+		</p>
+	</footer>
 </body>
 </html>
